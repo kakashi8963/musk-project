@@ -15,7 +15,7 @@ name='MUSK HANDICRAFTS'
     billingAddress
     shippingAddress
     image='https://svgshare.com/i/CUz.svg'
-    description={`Your total is $${price}`}
+    description={`Your total is RS ${price}`}
     amount={price}
     panelLabel='Pay Now'
     token={onToken}

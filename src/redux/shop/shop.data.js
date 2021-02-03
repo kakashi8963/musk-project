@@ -8,196 +8,178 @@ const SHOP_DATA = {
         id: 1,
         name: 'Mini Wardrobe ',
         imageUrl: 'https://lh3.googleusercontent.com/Ma8V5KsFc8XZ13z8nJaDPH-4_8RKGlyV5OT1_AJsC3mKqp6TGUUfdbxkKRNyc4RMI8gJSytOTgerbVJq=w768-h768-n-o-v1',
-        price: 5000
+        price: 9000
       },
       {
         id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18
+        name: 'Mini Vintage Cupboard',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6654.HEIC?width=1920&height=1080&fit=bounds',
+        price: 8000
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35
+        name: 'Vintage Wooden Almirah',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6640.HEIC',
+        price: 20000
       },
       {
         id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25
+        name: 'Designer Cupboard',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6643.HEIC?width=1920&height=1080&fit=bounds',
+        price: 7000
       },
       {
         id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18
+        name: 'Vintage Wooden Almirah',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6659.HEIC?width=1920&height=1080&fit=bounds',
+        price: 9000
       },
       {
         id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14
+        name: 'Carved Wooden Cupboard',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6691.HEIC?width=1920&height=1080&fit=bounds',
+        price: 11000
       },
       {
         id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18
+        name: 'Carved Wooden Almirah',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6699.HEIC?width=1920&height=1080&fit=bounds',
+        price: 18000
       },
       {
         id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14
+        name: 'Wardrobe',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6645.HEIC?width=1920&height=1080&fit=bounds',
+        price: 8500
       },
-      {
-        id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16
-      }
+      
     ]
   },
-  tablesandchairs:{
+
+  tablesandchairs: {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title:'Tables and Chairs',
+    routeName: 'tablesandchairs',
     items: [
       {
-        id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220
+        id: 1,
+        name: 'Folding Chair ',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6687.HEIC?width=1920&height=1080&fit=bounds',
+        price: 1500
       },
       {
-        id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 280
+        id: 2,
+        name: 'Wooden Chair',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6686.HEIC?width=1920&height=1080&fit=bounds',
+        price: 1200
       },
       {
-        id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 110
+        id: 3,
+        name: 'Arm Rest Chair',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6678.HEIC?width=1920&height=1080&fit=bounds',
+        price: 3000
       },
       {
-        id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 160
+        id: 4,
+        name: 'Wooden Centre Table',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6672.HEIC?width=1920&height=1080&fit=bounds',
+        price: 4000
       },
       {
-        id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 160
+        id: 5,
+        name: 'Folding Table',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6680.HEIC?width=1920&height=1080&fit=bounds',
+        price: 1500
       },
       {
-        id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-        price: 160
-      },
-      {
-        id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190
-      },
-      {
-        id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 200
-      }
+        id: 6,
+        name: 'Swing Chair',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6700.HEIC?width=1920&height=1080&fit=bounds',
+        price: 300      },
+
+      
     ]
   },
+
   antiques:{
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Antiques',
+    routeName: 'antiques',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125
+        name: 'Exotic Painting',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6707.HEIC?width=1920&height=1080&fit=bounds',
+        price: 3000
       },
       {
         id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90
+        name: 'Classic Painting',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6709.HEIC?width=1920&height=1080&fit=bounds',
+        price: 2800
       },
       {
         id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-        price: 90
+        name: 'Painting',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6710.HEIC?width=450&height=278&fit=bounds&crop=fill',
+        price: 3000
       },
       {
         id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-        price: 165
+        name: 'Vintage Wooden Door',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6638.HEIC?width=1920&height=1080&fit=bounds',
+        price: 8000
       },
-      {
-        id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-        price: 185
-      }
+     
     ]
   },
  utilities: {
     id: 4,
-    title: 'Womens',
-    routeName: 'womens',
+    title: 'Utilities',
+    routeName: 'utilities',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-        price: 25
+        name: 'Royal Drawer',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6649.HEIC?width=1920&height=1080&fit=bounds',
+        price: 7000
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-        price: 20
+        name: 'Wooden-Glass Cupboard',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6647.HEIC?width=1920&height=1080&fit=bounds',
+        price: 4000
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-        price: 80
+        name: 'Vintage Wooden Bopx',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6657.HEIC?width=1920&height=1080&fit=bounds',
+        price: 6000
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-        price: 80
+        name: 'Wooden Cupboard',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6683.HEIC?width=1920&height=1080&fit=bounds',
+        price: 5000
       },
       {
         id: 27,
-        name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-        price: 45
+        name: 'Wooden Deewan',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6651.HEIC?width=1920&height=1080&fit=bounds',
+        price: 9000
       },
       {
         id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        price: 135
+        name: 'Vintage Sandook',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6682.HEIC?width=1920&height=1080&fit=bounds',
+        price: 8000
       },
+      
       {
         id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20
+        name: 'Mirror Case',
+        imageUrl: 'https://hosting.photobucket.com/images/i/mananbafna00/IMG_6697.HEIC?width=1920&height=1080&fit=bounds',
+        price: 1000
       }
     ]
   }

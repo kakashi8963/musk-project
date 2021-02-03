@@ -7,7 +7,7 @@ import Signinandsignuppage from './pages/homepage/sign/sign.components';
 import ShopPage from './pages/homepage/shop/shop.component';
 import HomePage from './pages/homepage/homepage.component';
 import CheckoutPage from './pages/homepage/checkout/checkout.components';
-
+import Contact from './pages/contactpage/contact.comonents';
 import {auth,createUserProfileDocument} from './firebase/firebase.utils'
 import {setCurrentUser} from './redux/user/user.actions';  
 import {createStructuredSelector} from 'reselect';
@@ -49,6 +49,7 @@ componentWillUnmount(){
         <Switch> 
         <Route exact path='/' component={HomePage}/>
         <Route path='/shop' component={ShopPage}/>
+        <Route path='/contact' component={Contact}/>
         <Route  path='/checkout' component={CheckoutPage}/>
         <Route  path='/signin' render={()=> this.props.currentUser?(<Redirect to='/' />) : (
           <Signinandsignuppage/>
