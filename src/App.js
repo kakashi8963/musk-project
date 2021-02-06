@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch,Redirect} from 'react-router-dom';
 import Header from './components/header/header.component';
-import './App.css';
+import {GlobalStyle} from './global.styles';
  import {connect} from 'react-redux';
 import Signinandsignuppage from './pages/homepage/sign/sign.components';
 import ShopPage from './pages/homepage/shop/shop.component';
@@ -12,13 +12,16 @@ import {auth,createUserProfileDocument} from './firebase/firebase.utils'
 import {setCurrentUser} from './redux/user/user.actions';  
 import {createStructuredSelector} from 'reselect';
 import {selectCurrentUser} from './redux/user/user.selector';
+import {selectCollectionsForPreview} from './redux/shop/shop.selectors';
+import {addCollectionAndDocuments} from './firebase/firebase.utils';
+
 
 class App extends React.Component {
 
 unsubscribeFromAuth =null;
 
 componentDidMount(){
-const{setCurrentUser} =this.props;
+const{setCurrentUser,collectionArray} =this.props;
 
   this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth=>{
    if(userAuth){
@@ -35,7 +38,10 @@ const{setCurrentUser} =this.props;
    else{
 setCurrentUser(userAuth);
    }  
+   
 });
+addCollectionAndDocuments ('collections',collectionArray.map(({title,items})=>({title,items})));
+
 }
 
 componentWillUnmount(){
@@ -45,6 +51,7 @@ componentWillUnmount(){
   render(){
     return (
       <div>
+        <GlobalStyle/>
         <Header />
         <Switch> 
         <Route exact path='/' component={HomePage}/>
@@ -62,8 +69,9 @@ componentWillUnmount(){
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser:selectCurrentUser
-  })
+  currentUser:selectCurrentUser,
+  collectionArray:selectCollectionsForPreview
+  });
 
 const mapDispatchToProps =dispatch =>({
   setCurrentUser:user=> dispatch(setCurrentUser(user))
