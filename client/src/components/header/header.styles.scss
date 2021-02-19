@@ -1,0 +1,50 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @media screen and (max-width:800px){
+      height: 60px;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  
+    .logo-container {
+      height: 100%;
+      width: 70px;
+      padding: 25px;
+
+      @media screen and (max-width:800px){
+        width: 10px;
+        padding: 0;
+    }
+
+      &:hover {
+        background-color:white;
+        color:white;
+        border: solid white;
+      }
+    
+
+    }
+  
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @media screen and (max-width:800px){
+        width:85%;
+    }
+  
+      .option {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  
