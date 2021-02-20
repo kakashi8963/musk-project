@@ -5,7 +5,7 @@ export const addItemToCart =(cartItems,cartItemToAdd)=>{
 
         if(existingCartItem){
             return cartItems.map(cartItem=>
-                cartItem.id===cartItemToAdd.id
+                cartItem.name===cartItemToAdd.name
                 ?{...cartItem,quantity:cartItem.quantity+1}
                 :cartItem
                 )
@@ -16,14 +16,14 @@ export const addItemToCart =(cartItems,cartItemToAdd)=>{
 
 export const decreaseItemFromCart =(cartItems,cartItemToAdd)=>{
     const existingCartItem = cartItems.find(
-        cartItem =>cartItem.id===cartItemToAdd.id
+        cartItem =>cartItem.name===cartItemToAdd.name
         );
         if(existingCartItem.quantity===1){
-            return cartItems.filter(cartItem=> cartItem.id !==cartItemToAdd.id)
+            return cartItems.filter(cartItem=> cartItem.name !==cartItemToAdd.name)
         }
 
             return cartItems.map(cartItem=>
-                cartItem.id===cartItemToAdd.id
+                cartItem.name===cartItemToAdd.name
                 ?{...cartItem,quantity:cartItem.quantity- 1}
                 :cartItem
                 )
